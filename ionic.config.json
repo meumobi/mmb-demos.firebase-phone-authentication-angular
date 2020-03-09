@@ -1,0 +1,7 @@
+{
+  "name": "mmb-demos.firebase-phone-authentication-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
