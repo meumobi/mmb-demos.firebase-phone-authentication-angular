@@ -1,3 +1,7 @@
+/**
+ * run `$ node ./scripts/udpate-user`
+ */
+
 const admin = require('firebase-admin');
 
 const serviceAccount = require('./meu-starter-firebase-adminsdk-1bu7h-ff6531a16d.json');
@@ -21,4 +25,7 @@ admin.auth().getUser(uid)
   })
   .catch((error) => {
     console.log('Error updating user:', error);
-  });
+  })
+  .finally( () => process.exit(0));
+
+
